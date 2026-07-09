@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Belajar Suku Kata</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="kidsDecor" aria-hidden="true">
+    <span class="floatIcon sun">☀️</span>
+    <span class="floatIcon star">⭐</span>
+    <span class="floatIcon balloon">🎈</span>
+    <span class="floatIcon rocket">🚀</span>
+    <span class="floatIcon cloud">☁️</span>
+    <span class="floatIcon butterfly">🦋</span>
+  </div>
+  <main class="wrap">
+    <header>
+      <section class="titleBox">
+        <h1><span class="rainbowText">Belajar Suku Kata</span></h1>
+        <p class="subtitle">Klik kad suku kata untuk dengar bunyi dan belajar membaca.</p>
+      </section>
+      <div class="mascot" aria-hidden="true">📚</div>
+    </header>
+
+    <section class="panel topControls">
+      <div class="funBanner">
+        <span class="bigEmoji" aria-hidden="true">🎨</span>
+        <span>Jom belajar sambil bermain!</span>
+      </div>
+      <div class="funChips" aria-hidden="true">
+        <span class="funChip">🌈 Vokal</span>
+        <span class="funChip">🧸 Konsonan</span>
+        <span class="funChip">⭐ Suku Kata</span>
+      </div>
+    </section>
+
+    <section class="panel permanentAudioGuide">
+      <h2><span class="sectionBadge">🔊</span>Permanent Audio MP3</h2>
+      <p class="smallNote">
+        Bahagian ini disediakan supaya cikgu boleh masukkan audio MP3 sendiri secara kekal.
+        Letakkan fail MP3 dalam folder <strong>audio</strong>, kemudian masukkan nama fail dalam bahagian
+        <strong>permanentAudio</strong> di dalam kod JavaScript.
+      </p>
+
+      <div class="audioGuideGrid">
+        <div class="audioGuideCard">
+          <strong>1. Simpan fail MP3</strong>
+          Contoh: <code>audio/ba.mp3</code>, <code>audio/e-pepet.mp3</code>, <code>audio/be.mp3</code>
+        </div>
+        <div class="audioGuideCard">
+          <strong>2. Masukkan dalam kod</strong>
+          Isi nama audio di bahagian <code>const permanentAudio = { ... }</code>
+        </div>
+        <div class="audioGuideCard">
+          <strong>3. Klik kad</strong>
+          Kad akan mainkan MP3 dahulu. Jika MP3 tiada, suara browser akan digunakan semula.
+        </div>
+      </div>
+
+      <div class="audioGuideExample" aria-label="Contoh kod permanent audio">
+<code>const permanentAudio = {
+  a: "audio/a.mp3",
+  "ǝ": "audio/e-pepet.mp3",
+  e: "audio/e-taling.mp3",
+  b: "audio/b.mp3",
+  ba: "audio/ba.mp3",
+  "bǝ": "audio/b-pepet.mp3",
+  be: "audio/be.mp3"
+};</code>
+      </div>
+      <div class="audioModeNote">✅ Fungsi asal dikekalkan + MP3 sendiri ditambah.</div>
+    </section>
+
+
+    <section class="panel">
+      <h2><span class="sectionBadge">🌈</span>Belajar Bunyi Vokal</h2>
+      <p class="smallNote"></p>
+      <div id="vowelGrid" class="learnGrid"></div>
+    </section>
+
+    <section class="panel">
+      <h2><span class="sectionBadge">🧸</span>Belajar Bunyi Konsonan</h2>
+      <p class="smallNote"></p>
+      <div id="consonantGrid" class="learnGrid"></div>
+    </section>
+
+    <section class="panel">
+      <h2><span class="sectionBadge">⭐</span>Belajar Suku Kata</h2>
+      <p class="smallNote"></p>
+      <div id="learnGrid" class="learnGrid"></div>
+    </section>
+
+    <p class="footerNote">Nota: Kad akan menggunakan MP3 sendiri jika disediakan. Jika tiada, bunyi menggunakan fungsi suara browser.</p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
